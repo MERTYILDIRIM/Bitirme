@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 String value = dataSnapshot.getValue(false).toString();
                 if(value.charAt(0)=='1')
                     detectText.setText("Araç Algılandı");
+                else if(value.charAt(0)=='2')
+                    detectText.setText("İnsan Algılandı");
                 else
                     detectText.setText("Algılama Yok");
                 if(allDataHere<4)
@@ -137,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
             @Override
             public void onCancelled(DatabaseError error) {
-                // Failed to read value
+                // Failed to read value1
             }
         });
         buzzerBtn.setOnClickListener(new View.OnClickListener() {
