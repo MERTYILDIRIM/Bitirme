@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     String value = dataSnapshot.getValue(false).toString();
                     //Toast.makeText(getApplicationContext(), "line Value: " + value, Toast.LENGTH_LONG).show();
-                    if (value.charAt(0) != '0') {
+                    if (value.charAt(0) == '1') {
                         lineText.setText("ŞERİT İHLALİ");
                     /*tmr.schedule(new TimerTask() {
                         @Override
