@@ -115,7 +115,7 @@ try:
                         if(incomingData[0]=='c'):
                                 result = firebase.put('/','detect', '0')
                                 result = firebase.put('/','distance', '0')
-                                result = firebase.put('/','buzzer', "1")
+                                ##result = firebase.put('/','buzzer', "1")
                         elif(incomingData[0]=='1'):
                                 result = firebase.put('/','buzzer', "1")
                         elif(incomingData[0]=='0'):
