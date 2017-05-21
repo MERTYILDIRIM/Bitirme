@@ -34,9 +34,9 @@
         android:id="@+id/buzzerBtn"
         android:layout_width="368dp"
         android:layout_height="48dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="48dp"
         android:text="Buzzer Kapat"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaydetBtn"
         tools:layout_editor_absoluteX="8dp" />
 
     <TextView
@@ -64,20 +64,28 @@
     <Button
         android:id="@+id/kaydetBtn"
         android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="140dp"
         android:text="Kaydet"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/distanceEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/lineText"
+        tools:layout_editor_absoluteX="8dp" />
 
     <Button
         android:id="@+id/relayBtn"
         android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
-        android:text="Röle Kapat"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:text="GÜÇ AÇ"
         app:layout_constraintTop_toBottomOf="@+id/buzzerBtn"
         tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/lineText"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="ŞERİT" />
 </android.support.constraint.ConstraintLayout>
